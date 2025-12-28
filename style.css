@@ -1,0 +1,101 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    padding:10px;        
+}
+.title{
+    text-align: center;
+    margin-bottom:50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+.python{
+    width:100%;
+    max-width: 540px;
+    background-color: rgb(255, 255, 255);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.row{
+    display:flex;
+}
+input.text{
+    border:0.1px solid black;
+    border-radius:30px;
+    background:transparent;
+    padding:10px;
+    font-weight:20px;
+    width:500px;
+}
+button{
+    border:none;
+    border-radius: 40px;
+    padding:16px 50px;
+    background: #062a67 ;
+    color:rgb(255, 255, 255);
+    font-size:16px;
+    cursor:pointer;
+    transition: 0.6s;
+    margin-left: 10px;
+    
+    
+}
+button:hover{
+    background-color: rgb(9, 9, 172);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+
+}
+ul li{
+    list-style:none;
+    font-size:17px;
+    padding:12px 8px 12px 50px;
+    user-select:none;
+    cursor:pointer;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+span:hover {
+    background: #ffe3e3;
+    color: #ff0000;
+}
+
+.empty-message {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    margin-top: 20px;
+    padding: 20px;
+    display: none;
+}
